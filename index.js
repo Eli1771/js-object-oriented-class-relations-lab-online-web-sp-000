@@ -39,6 +39,7 @@ class Passenger {
   
   drivers() {
     let trips = this.trips();
+    console.log(this);
     console.log(trips);
     trips.map(
       function(trip) {
