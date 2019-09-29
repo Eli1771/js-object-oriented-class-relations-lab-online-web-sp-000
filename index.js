@@ -40,12 +40,7 @@ class Passenger {
   drivers() {
     let trips = this.trips();
     trips.map(
-      function(trip) {
-        console.log('this trip' + trip);
-        console.log('trip driver wo f call' + trip.driver);
-        console.log('called trip driver f' + trip.driver().name);
-        return
-      }.bind(this)
+      trip => {trip.driver()}
     );
   }
 }
