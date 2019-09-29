@@ -44,7 +44,7 @@ class Passenger {
         console.log('this trip' + trip);
         console.log('trip driver wo f call' + trip.driver);
         console.log('called trip driver f' + trip.driver().name);
-        return trip.driver()
+        trip => trip.driver()
       }.bind(this)
     );
   }
