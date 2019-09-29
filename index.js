@@ -38,7 +38,12 @@ class Passenger {
   }
   
   drivers() {
-    
+    let trips = this.trips();
+    trips.map(
+      function(trip) {
+        
+      }.bind(this)
+    );
   }
 }
 
